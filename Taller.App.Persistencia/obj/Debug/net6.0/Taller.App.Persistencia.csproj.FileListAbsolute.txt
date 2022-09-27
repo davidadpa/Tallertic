@@ -1,0 +1,17 @@
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.csproj.AssemblyReference.cache
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.AssemblyInfoInputs.cache
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.AssemblyInfo.cs
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.csproj.CoreCompileInputs.cache
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Persistencia.deps.json
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Persistencia.runtimeconfig.json
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Persistencia.dll
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Persistencia.pdb
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Dominio.dll
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Dominio.pdb
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.csproj.CopyComplete
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.dll
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\refint\Taller.App.Persistencia.dll
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.pdb
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.genruntimeconfig.cache
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\ref\Taller.App.Persistencia.dll

@@ -1,0 +1,161 @@
+﻿@page
+@model Taller.App.Front.Pages.GestionJefeOperacionModel
+@{
+}
+<h4 style="font-weight: bold">Registro de Propietario</h4>
+<br>
+<div class="container text-rigth">
+  <div class="form-align: center">
+    <div class="col-md-8">
+      <form class="row g-4">
+        <div class="col-md-3">
+          <label for="inputDocumentoIdentidad" class="form-label">Documento Identidad</label>
+          <input type="text" class="form-control" id="inputDocumentoIdentidad" placeholder="Documento Identidad">
+        </div>
+        <div class="col-md-3">
+          <label for="inputNombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+        </div>
+        <div class="col-md-3">
+          <label for="inputApellidos" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="inputApellidos" placeholder="Apellidos">
+        </div>
+        <div class="col-2">
+          <label for="inputfecha" class="form-label">Fecha Nac</label>
+          <input type="date" class="form-control" id="inputFecha" placeholder="DD/MM/AAAA">
+        </div>
+        <div class="col-3">
+          <label for="inputAddress2" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="inputDirreccion" placeholder="Dirección">
+        </div>
+        <div class="col-md-2">
+          <label for="inputTelefono" class="form-label">Teléfono</label>
+          <input type="text" class="form-control" id="inputTelefono" placeholder="Teléfono">
+        </div>
+        <div class="col-md-3">
+          <label for="inputCiudad" class="form-label">Ciudad Residencia</label>
+          <input type="text" class="form-control" id="inputCiduadResidencia" placeholder="Ciudad Residencia">
+        </div>
+        <div class="col-md-3">
+          <label for="inputCorreo" class="form-label">Correo electrónico</label>
+          <input type="text" class="form-control" id="inputCorreo" placeholder="Correo electrónico">
+        </div>
+
+      </form>
+    </div>
+    <div class="col-auto">
+      <div>
+        /*<img src="/images/page2-img2.jpg" width="120" height="150" class="img-thumbnail" alt="Cinque Terre">*
+
+        <div>
+          <p><b>Santiago Morales Cruz</b>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="d-grid gap-2 md-6"></div>
+        <button type="button" class="btn btn-primary" class="btn btn-primary btn-lg">Agregar</button>
+        <button type="button" class="btn btn-success" class="btn btn-primary btn-lg">Editar</button>
+        <button type="button" class="btn btn-danger" class="btn btn-primary btn-lg">Eliminar</button>
+        <button type="button" class="btn btn-secondary" class="btn btn-primary btn-lg">Volver</button>
+      </div>
+    </div>
+  </div>
+
+  <br />
+
+  <hr align="left" noshade="noshade" size="2" width="200" />
+  <hr style="color: #0056b2;" />
+
+  <h4 style="font-weight: bold">Registro de Vehiculo</h4>
+  <br>
+  <div class="container text-rigth">
+    <div class="form-align: center">
+      <div class="col-md-8">
+        <form class="row g-4">
+          <div class="col-md-2">
+            <label for="inputPlaca" class="form-label">Placa</label>
+            <input type="text" class="form-control" id="inpuPlaca" placeholder="Placa">
+          </div>
+          <div class="col-md-2">
+            <label for="inputTipo class=" form-label">Tipo</label>
+            <label for="tipo">
+              <select name="tipo" id="tipo">
+                <option value="1">Automóvil</option>
+                <option value="2">Camión</option>
+                <option value="3">Camioneta</option>
+              </select>
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label for="inputMarca" class="form-label">Marca</label>
+            <label for="tipo">
+              <select name="tipo" id="marca">
+                <option value="1">Chevrolet</option>
+                <option value="2">Ford</option>
+                <option value="3">Renault</option>
+                <option value="3">Toyota</option>
+              </select>
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label for="inputLinea" class="form-label">Linea</label>
+            <label for="tipo">
+              <select name="tipo" id="linea">
+                <option value="1">Aveo</option>
+                <option value="2">Captiva</option>
+                <option value="3">Optra</option>
+                <option value="3">Spark</option>
+              </select>
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label for="inputModelo" class="form-label">Modelo</label>
+            <label for="modelo">
+              <select name="modelo" id="modelo">
+                <option value="1">2022</option>
+                <option value="2">2021</option>
+                <option value="3">2020</option>
+                <option value="3">2019</option>
+                <option value="2">2018</option>
+                <option value="3">2017</option>
+                <option value="3">2016</option>
+                <option value="2">2015</option>
+                <option value="3">2014</option>
+                <option value="3">2013</option>
+                <option value="2">2012</option>
+                <option value="3">2011</option>
+                <option value="3">2010</option>
+              </select>
+            </label>
+          </div>
+
+        </form>
+          <br />
+        <div class="col-10">
+          <div>
+            <label for="inputModelo" class="form-label">Descripcion General</label>
+
+            <textarea class="form-control" placeholder="Ingrese informacion adicional" id="floatingTextarea"></textarea>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-auto">
+        <div>
+          /*<img src="/images/frente.jpg" width="110" height="100" class="img-thumbnail" alt="Cinque Terre">*
+
+        </div>
+
+        <br />   
+        <div class="col-md-4">
+          <div class="d-grid gap-2 md-6"></div>
+          <button type="button" class="btn btn-primary" class="btn btn-primary btn-lg">Agregar</button>
+          <button type="button" class="btn btn-success" class="btn btn-primary btn-lg">Editar</button>
+          <button type="button" class="btn btn-danger" class="btn btn-primary btn-lg">Eliminar</button>
+          <button type="button" class="btn btn-secondary" class="btn btn-primary btn-lg">Volver</button>
+        </div>
+      </div>
+    </div>

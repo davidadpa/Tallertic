@@ -1,0 +1,122 @@
+﻿@page
+@model Taller.App.Front.Pages.GestionMecanicoModel
+@{
+}
+
+<h3 style="font-weight: bold">
+  @Model.titulo  @Model.listaMecanicos.Count Registros
+</h3>
+
+<div class="container-fluid">
+  <div class="col">
+    <div class="row-sm-12">
+
+      <table id="example" class="table table-hover table-striped border" style="width:100%; display: block;  height: 200px; overflow-y: auto  ">
+        <thead>
+          <tr>
+            <th class="col-xs-0">Id</th>
+            <th class="col-xs-3">Nombre</th>
+            <th class="col-xs-1">Teléfono</th>
+            <th class="col-xs-1">Rol</th>
+            <th class="col-xs-2">Nivel de Estudio</th>
+            <th class="col-xs-1">Contraseña</th>
+            <th class="col-xs-2">Sede</th>
+            <th class="col-xs-2">Acciones</th>
+          </tr>
+        </thead>
+        <tbody >
+          @foreach (Taller.App.Dominio.Entidades.Mecanico m in @Model.listaMecanicos){
+                  <tr>
+                    <td>@m.Id</td>
+                    <td>@m.Nombre</td>
+                    <td>@m.Telefono</td>
+                    <td>@m.Rol</td>
+                    <td>@m.NivelEstudio</td>
+                    <td>@m.Contrasena</td>
+                    <td>@m.SedeId</td>
+
+                    <td style="display: flex;">
+                      <form method="POST">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="submit" class="btn btn-primary table-btn" asp-route-id="@m.Id" asp-page-handler="DelMecanico">Borrar</button>
+                          <a asp-route-id="@m.Id" asp-page="EditMecanico" class="btn btn-success btn-sm table-btn">Editar</a>
+                        </div>
+                      </form>
+                    </td>
+                  </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <form method="post" id="CustomerGrid">
+      <div class="row-sm-6">
+        <h4 style="font-weight: bold">Gestión de Mecanicos</h4>
+        <div class="col-md-6">
+
+          <div class="mb-3 control-label">
+            <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="Input1" placeholder="Nombre" name="Nombre">
+          </div>
+
+          <div class="mb-3 control-label">
+            <label for="exampleFormControlInput1" class="form-label">Número de Teléfono:</label>
+            <input type="text" class="form-control" id="Input2" placeholder="Teléfono" name="Telefono">
+          </div>
+          <div class="mb-3 control-label">
+            <label for="exampleFormControlInput1" class="form-label">Contraseña:</label>
+            <input type="password" class="form-control" id="Input3"  name="Contrasena">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Rol:</label>
+            <select class="form-control" id="sel1" name="Rol">
+              <option>Mecánico</option>
+              <option>Latonero</option>
+              <option>Electricista</option>
+              <option>Pintor</option>
+              <option>Electrónica</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nivel de Estudios:</label>
+            <select class="form-control" id="sel1" name="NivelEstudio">
+              <option>Primaria</option>
+              <option>Bachiller</option>
+              <option>Técnico</option>
+              <option>Universitario</option>
+              <option>Profesional</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Sede:</label>
+            <select class="form-select" id="sel1" name="SedeId">
+              @foreach (var s in @Model.listaSedes)
+              {
+                <option value="@s.SedeId">@s.Nombre</option>
+              }
+
+            </select>
+          </div>
+          <br>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="submit" class="btn btn-primary" asp-page-handler="AddMecanico">Agregar</button>
+          </div>
+        </div>
+    </form>
+
+    <div class="col-md-6">
+      <h4 style="font-weight: bold">Mecánico (Leonardo Torres)</h4>
+      <img src="/images/page2-img4.jpg" class="img-thumbnail" alt="Cinque Terre">
+
+      <form>
+        <div class="form-group">
+          <label for="comment">Comentarios:</label>
+          <textarea class="form-control" rows="5" id="comment">Especialista en la marca Honda</textarea>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+</div>
+

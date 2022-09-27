@@ -1,0 +1,183 @@
+﻿@page
+@model Taller.App.Front.Pages.GestionPropietarioModel
+@{
+}
+
+<div class="card">
+  <img src="foto.jpg" alt="" style="width:100%">
+  <div class="container">
+    <h4><b>
+        <center>Autocheck </center>
+      </b></h4>
+
+  </div>
+</div>
+
+<br>
+
+<ul>
+  <li>
+    <p><strong>
+        <FONT COLOR="blue">REGISTRO DE PROPIETARIO</FONT>
+      </strong></p>
+  </li>
+</ul>
+
+
+
+
+<form class="row g-3">
+  <div class="col-auto">
+    </label>
+    <label for="cedula">
+      <span>Cedula de Ciudadanía:</span>
+      <input type="text" name="correo" id="cedula" autocomplete="cedula" required>
+    </label>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="nombre">
+      <span> Nombre:</span>
+      <input type="text" name="nombre" id="nombre" autocomplete="nombre" required>
+    </label>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="apellidos">
+      <span>Apellidos:</span>
+      <input type="text" name="apellidos" id="apellidos" autocomplete="apellidos" required>
+    </label>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="fechanacimiento">
+      <span>Fecha de Nacimiento</span>
+      <input type="date" id="fechanacimiento">
+    </label>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="direccion">
+      <span>Dirección:</span>
+      <input type="text" name="direccion" id="direccion" autocomplete="direccion" required>
+    </label>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="telefono">
+      <span>Teléfono:</span>
+      <input type="text" name="telefono" id="telefono" autocomplete="telefono" required>
+    </label>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="nivelestudios">
+      <span>Nivel Estudios:</span>
+      <input type="text" name="nivelestudios" id="nivelestudios" autocomplete="nivelestudios" required>
+    </label>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="ciudadresidencia">
+      <span> Ciudad Residencia:</span>
+      <input type="text" name="ciudadresidencia" id="ciudadresidencia" autocomplete="ciudadresidencia" required>
+    </label>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="correo">
+      <span> Correo Electrónico:</span>
+      <input type="text" name="correo" id="correo" autocomplete="correo" required>
+    </label>
+  </div>
+
+</form>
+
+<hr align="left" noshade="noshade" size="2" width="80%" />
+<hr style="color: #0056b2;" />
+
+
+<ul>
+  <li>
+    <p><strong>
+        <FONT COLOR="blue">REGISTRO DE VEHICULO</FONT>
+      </strong></p>
+  </li>
+</ul>
+
+
+<form class="row g-3">
+  <div class="col-auto">
+    </label>
+    <label for="placa">
+      <span>Placa:</span>
+      <input type="text" name="placa" id="placa" autocomplete="placa" required>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="tipo">
+      <span> Tipo: </span>
+      <select name="tipo" id="tipo">
+        <option value="1">Automóvil</option>
+        <option value="2">Camión</option>
+        <option value="3">Camioneta</option>
+      </select>
+    </label>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="marca">
+      <span> Marca: </span>
+      <select name="tipo" id="tipo">
+        <option value="1">Chevrolet</option>
+        <option value="2">Ford</option>
+        <option value="3">Renault</option>
+        <option value="3">Toyota</option>
+      </select>
+    </label>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="modelo">
+      <span>Modelo:</span>
+      <input type="text" name="modelo" id="marca" autocomplete="modelo" required>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="capacidad">
+      <span> Capacidad Pasajeros: </span>
+      <select name="capacidad" id="capacidad">
+        <option value="1">4</option>
+        <option value="2">6</option>
+        <option value="3">6</option>
+        <option value="3">8</option>
+      </select>
+    </label>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="cilindrada">
+      <span>Cilindrada:</span>
+      <input type="text" name="cilindrada" id="cilindrada" autocomplete="cilindrada" required>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="paisorigen">
+      <span>País de Origen:</span>
+      <input type="text" name="paisorigen" id="paisorigen" autocomplete="paisorigen" required>
+  </div>
+  <div class="col-auto">
+    </label>
+    <label for="descripcion">
+      <span>Descripción General:</span>
+      <input type="text" name="descripcion" id="descripcion" autocomplete="descripcion" required>
+    </label>
+  </div>
+
+</form>
+<br> <br>
+
+
+<button type="button" class="btn btn-primary">Registrar</button>
+<button type="button" class="btn btn-success">Solicitar Servicio</button>
+<button type="button" class="btn btn-secondary">Volver</button>

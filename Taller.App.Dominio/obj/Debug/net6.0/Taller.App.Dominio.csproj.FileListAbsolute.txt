@@ -1,0 +1,12 @@
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\bin\Debug\net6.0\Taller.App.Dominio.deps.json
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\bin\Debug\net6.0\Taller.App.Dominio.dll
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\bin\Debug\net6.0\Taller.App.Dominio.pdb
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.csproj.AssemblyReference.cache
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.AssemblyInfoInputs.cache
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.AssemblyInfo.cs
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.csproj.CoreCompileInputs.cache
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.dll
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\obj\Debug\net6.0\refint\Taller.App.Dominio.dll
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.pdb
+D:\Taller\TallerCheckAutos\Taller.App\Taller.App.Dominio\obj\Debug\net6.0\ref\Taller.App.Dominio.dll

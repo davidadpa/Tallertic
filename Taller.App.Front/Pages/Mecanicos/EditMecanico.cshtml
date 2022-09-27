@@ -1,0 +1,87 @@
+﻿@page
+@model Taller.App.Front.Pages.EditMecanicoModel
+@{
+}
+
+<h2 clas="text-info">Editar Mecánico</h2>
+<div class="border">
+    <form method="post" id="CustomerGrid">
+        <div asp-validation-summary="ModelOnly" class="text-danger"> </div>  
+        <div class="container" style="padding:30px"> 
+            <div class="form-group"> 
+                <input type="hidden" asp-for="Mecanico.Id" /> 
+                <div class="row-sm-6">
+                    <h4 style="font-weight: bold">Gestión de Mecanicos</h4>
+                    <div class="col-md-4">
+                        <div class="mb-3 control-label">
+                            <label asp-for="Mecanico.Nombre" class="form-label"></label>
+                        </div>
+                        <div class="mb-3 control-label">
+                            <input asp-for="Mecanico.Nombre" class="form-control">
+                        </div>
+                        <span asp-validation-for="Mecanico.Nombre" class="text-danger"></span>
+
+                        <div class="mb-3 control-label">
+                            <label asp-for="Mecanico.Telefono" class="form-label"></label>
+                            <input asp-for="Mecanico.Telefono" class="form-control">
+                        </div>
+                        <span asp-validation-for="Mecanico.Telefono" class="text-danger"></span>
+
+                        <div class="mb-3 control-label">
+                            <label asp-for="Mecanico.Contrasena" class="form-label"></label>
+                            <input  asp-for="Mecanico.Contrasena" class="form-control">
+                        </div>
+                        <span asp-validation-for="Mecanico.Contrasena" class="text-danger"></span>
+
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Rol:</label>
+                            <select class="form-control" asp-for="Mecanico.Rol">
+                            <option>Mecánico</option>
+                            <option>Latonero</option>
+                            <option>Electricista</option>
+                            <option>Pintor</option>
+                            <option>Electrónica</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nivel de Estudios:</label>
+                            <select class="form-control" asp-for="Mecanico.NivelEstudio">
+                            <option>Primaria</option>
+                            <option>Bachiller</option>
+                            <option>Técnico</option>
+                            <option>Universitario</option>
+                            <option>Profesional</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Sede:</label>
+                            <select class="form-select" asp-for="Mecanico.SedeId">
+                                @foreach (var s in @Model.listaSedes)
+                                {
+                                    <option value="@s.SedeId">@s.Nombre</option>
+                                }
+                            </select>
+                        </div>
+                    </div>    
+                    <br>
+                </div>
+            </div> 
+
+            <div class="form-group"> 
+                <div class="row"> 
+                    <div class="col-sm-2 offset-sm-2"> 
+                        <button type="submit" class="btn btn-primary form-control" >Actualizar</button>
+                    </div>     
+                    <div class="col-sm-2"> 
+                        <a asp-page="GestionMecanico" class="btn btn-success form-control">Regresar</a>
+                    </div>     
+                </div> 
+            </div> 
+
+        </div>
+    </form>
+</div>    
+
+
+
